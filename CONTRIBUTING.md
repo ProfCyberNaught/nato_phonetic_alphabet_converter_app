@@ -1,7 +1,7 @@
-Contributing to the NATO Phonetic Alphabet Convertor App
+Contributing to the NATO Phonetic Alphabet Converter App
 ========================================================
 
-As an open source project, the NATO Phonetic Alphabet Convertor App welcomes contributions of many forms.
+As an open source project, the NATO Phonetic Alphabet Converter App welcomes contributions of many forms.
 
 Examples of contributions include:
 
@@ -13,9 +13,9 @@ Examples of contributions include:
 **Warning: non-trivial pull requests (anything such as fixing a typo)
 will be closed!** `Please create an issue` to suggest such changes.
 
-[Create New Issue](https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app/issues "Create New Issue")
+[Create New Issue](https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app/issues "Create New Issue")
 
-NATO Phonetic Alphabet Convertor App uses GitHub to keep track of bugs, feature requests, and associated
+NATO Phonetic Alphabet Converter App uses GitHub to keep track of bugs, feature requests, and associated
 patches because GitHub now provides enough adequate tooling for its community.
 Patches can be submitted as pull requests, but if you don't create an issue,
 it's unlikely that we'll notice your contribution or accept it. Please make sure you
@@ -35,4 +35,4 @@ Code of Conduct
 ===============
 
 As a ```contributor```, you can help us keep our community open and inclusive.
-Please read and follow our [Code of Conduct](./code_of_conduct.md "Code of Conduct - NATO Phonetic Alphabet Convertor App") <!-- UPDATE ME -->
+Please read and follow our [Code of Conduct](./code_of_conduct.md "Code of Conduct - NATO Phonetic Alphabet Converter App") <!-- UPDATE ME -->
