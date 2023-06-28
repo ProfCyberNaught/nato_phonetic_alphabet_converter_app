@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NATO Phonetic Alphabet Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .author {
+        text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+    }
+
+    .result-container {
+      display: none; /* Hide the results section by default */
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f7f7f7;
+      padding: 10px;
+    }
+
+    .result-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .result-data {
+      font-size: 16px;
+      white-space: pre-wrap;
+      word-break: keep-all;
+    }
+
+    .copy-btn {
+      margin-top: 10px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    /* Dark mode styles */
+
+    body.dark-mode {
+      background-color: #111;
+      color: #fff;
+    }
+
+    body.dark-mode input[type="text"] {
+      background-color: #333;
+      color: #fff;
+    }
+
+    body.dark-mode .result-container {
+      background-color: #333;
+    }
+
+    body.dark-mode .result-title,
+    body.dark-mode .result-data {
+      color: #fff;
+    }
+
+    /* New CSS for the dark mode toggle */
+
+    .dark-mode-toggle-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .dark-mode-toggle-label {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .dark-mode-toggle-button {
+      display: inline-block;
+      width: 50px;
+      height: 25px;
+      border-radius: 25px;
+      background-color: #ccc;
+      position: relative;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dark-mode-toggle-button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      top: 2.5px;
+      left: 2.5px;
+      transition: left 0.3s ease;
+    }
+
+    .dark-mode-toggle-button.dark-mode::before {
+      left: calc(100% - 22.5px);
+    }
+  </style>
+</head>
+<body>
+  <h1>NATO Phonetic Alphabet Converter</h1>
+  <p class="author">by ProfCyberNaught</p>
+
+  <div class="dark-mode-toggle-container">
+    <label for="dark-mode-toggle" class="dark-mode-toggle-label">Dark Mode:</label>
+    <div class="dark-mode-toggle-button" onclick="toggleDarkMode()" id="dark-mode-toggle"></div>
+  </div>
+
+  <div class="container">
+    <form id="converter-form">
+      <div class="form-group">
+        <label for="input-text">Input Text</label>
+        <input type="text" id="input-text" placeholder="Enter text to convert" required>
+      </div>
+      <button type="submit" class="btn">Convert</button>
+      <button type="button" class="btn btn-secondary" onclick="resetForm()">Reset</button>
+    </form>
+    <div class="result-container" style="display: none;">
+      <div class="result-title">Result:</div>
+      <div class="result-data" id="converted-text"></div>
+      <button class="btn copy-btn" onclick="copyToClipboard()">Copy</button>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; 2023</p>
+    </div>
+  </div>
+
+  <script>
+    // Function to convert text to NATO phonetic alphabet
+    function convertToNATO(text) {
+        const natoAlphabet = {
+            'A': 'Alpha', 'B': 'Bravo', 'C': 'Charlie', 'D': 'Delta', 'E': 'Echo',
+            'F': 'Foxtrot', 'G': 'Golf', 'H': 'Hotel', 'I': 'India', 'J': 'Juliet',
+            'K': 'Kilo', 'L': 'Lima', 'M': 'Mike', 'N': 'November', 'O': 'Oscar',
+            'P': 'Papa', 'Q': 'Quebec', 'R': 'Romeo', 'S': 'Sierra', 'T': 'Tango',
+            'U': 'Uniform', 'V': 'Victor', 'W': 'Whiskey', 'X': 'X-ray', 'Y': 'Yankee',
+            'Z': 'Zulu'
+        };
+
+        const natoNumbers = {
+            '0': 'Zero', '1': 'One', '2': 'Two', '3': 'Three', '4': 'Four',
+            '5': 'Five', '6': 'Six', '7': 'Seven', '8': 'Eight', '9': 'Niner'
+        };
+
+        const upperText = text.toUpperCase();
+
+        let result = '';
+        for (let i = 0; i < upperText.length; i++) {
+            const char = upperText[i];
+
+            if (/[A-Z]/.test(char)) {
+            const natoWord = natoAlphabet[char];
+            result += natoWord + ' ';
+            } else if (/[0-9]/.test(char)) {
+            const natoNumber = natoNumbers[char];
+            result += natoNumber + ' ';
+            } else {
+            result += char + ' ';
+            }
+        }
+
+        return result.trim();
+        }
+
+
+    // Function to handle form submission
+    function handleSubmit(event) {
+        event.preventDefault();
+        const inputText = document.getElementById('input-text').value;
+        const convertedText = convertToNATO(inputText);
+        const resultsContainer = document.querySelector('.result-container');
+        resultsContainer.style.display = 'block';
+        document.getElementById('converted-text').textContent = convertedText;
+    }
+
+    // Function to copy the converted text to clipboard
+    function copyToClipboard() {
+      const convertedText = document.getElementById('converted-text');
+      const range = document.createRange();
+      range.selectNodeContents(convertedText);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      document.execCommand('copy');
+      selection.removeAllRanges();
+      alert('Text copied to clipboard!');
+    }
+
+    // Function to reset the form
+    function resetForm() {
+        document.getElementById('converter-form').reset();
+        document.getElementById('converted-text').textContent = '';
+        const resultsContainer = document.querySelector('.result-container');
+        resultsContainer.style.display = 'none';
+    }
+
+    // Add event listener to the form submit event
+    document.getElementById('converter-form').addEventListener('submit', handleSubmit);
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+      const darkModeToggle = document.getElementById('dark-mode-toggle');
+      darkModeToggle.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
