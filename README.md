@@ -55,7 +55,7 @@ Designed for: [Dark Mode Theme](https://github.com/settings/appearance "Enable D
   <ol>
   <!-- HELP NOTICE: If you need more links, copy and paste from this list, create your section below, then add the section link tag
        Do not forget to update all the tag links if you change names of the sections below -->
-    <li><a href="#about-the-repository-title">About NATO Phonetic Alphabet Convertor App</a></li>
+    <li><a href="#about-the-nato-phonetic-alphabet-convertor-app">About NATO Phonetic Alphabet Convertor App</a></li>
     <li><a href="#how-to-use">How to Use</a></li>
     <li><a href="#faq">Common FAQs</a></li>
     <li><a href="#using-in-your-projects">Using in your Projects</a></li>
