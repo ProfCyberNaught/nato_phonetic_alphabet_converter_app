@@ -1,7 +1,7 @@
 Support Contributors
 ====================
 
-As an open source project, NATO Phonetic Alphabet Convertor App welcomes contributions of many forms. We can offer support to those who might need it.
+As an open source project, NATO Phonetic Alphabet Converter App welcomes contributions of many forms. We can offer support to those who might need it.
 
 Examples of support include:
 
@@ -14,9 +14,9 @@ Examples of support include:
 **Warning: non-trivial pull requests (anything such as fixing a typo)
 will be closed!** `Please create an issue` to suggest such changes.
 
-[Create New Issue](https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app/issues "Create New Issue")
+[Create New Issue](https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app/issues "Create New Issue")
 
-[REPOSITORY-TITLE] uses GitHub to keep track of bugs, feature requests, and associated
+NATO Phonetic Alphabet Converter App uses GitHub to keep track of bugs, feature requests, and associated
 patches because GitHub now provides enough adequate tooling for its community.
 Patches can be submitted as pull requests, but if you don't create an issue,
 it's unlikely that we'll notice your contribution or accept it. Please make sure you
