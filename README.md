@@ -16,12 +16,12 @@ Designed for: [Dark Mode Theme](https://github.com/settings/appearance "Enable D
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app">
+  <a href="https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app">
     <img src="https://user-images.githubusercontent.com/123184999/222930893-22eff243-4570-40af-9709-e35c377c66d6.png" alt="ProfCyberNaught of Cybernaught Industries" width="250" height="250">
   </a>
 
 <!-- PROJECT TITLE -->
-  <h1 align="center">NATO Phonetic Alphabet Convertor App</h1>
+  <h1 align="center">NATO Phonetic Alphabet Converter App</h1>
   <h3 align="center">@ProfCyberNaught</h3><br /><br />
 
 <!-- PROJECT SHORT DESCRIPTION -->
@@ -35,9 +35,9 @@ Designed for: [Dark Mode Theme](https://github.com/settings/appearance "Enable D
   <br />
     <a href="./LICENSE">License</a>
     ·
-    <a href="https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app/issues">Report Bug</a>
+    <a href="https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app/issues">Request Feature</a>
+    <a href="https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app/issues">Request Feature</a>
     <br />
     <br />
     <a href="./code_of_conduct.md">Code of Conduct</a>
@@ -55,7 +55,7 @@ Designed for: [Dark Mode Theme](https://github.com/settings/appearance "Enable D
   <ol>
   <!-- HELP NOTICE: If you need more links, copy and paste from this list, create your section below, then add the section link tag
        Do not forget to update all the tag links if you change names of the sections below -->
-    <li><a href="#about-the-nato-phonetic-alphabet-convertor-app">About NATO Phonetic Alphabet Convertor App</a></li>
+    <li><a href="#about-the-nato-phonetic-alphabet-converter-app">About NATO Phonetic Alphabet Converter App</a></li>
     <li><a href="#how-to-use">How to Use</a></li>
     <li><a href="#faq">Common FAQs</a></li>
     <li><a href="#using-in-your-projects">Using in your Projects</a></li>
@@ -67,7 +67,7 @@ Designed for: [Dark Mode Theme](https://github.com/settings/appearance "Enable D
 
 
 <!-- ABOUT THE PROJECT -->
-## About the NATO Phonetic Alphabet Convertor App
+## About the NATO Phonetic Alphabet Converter App
 <div align="center">
 
 <!-- SCREENSHOT IMAGE: IF YOU DO NOT INTEND TO DISPLAY SCREENSHOTS, DISABLE THIS SECTION -->
@@ -79,7 +79,7 @@ Designed for: [Dark Mode Theme](https://github.com/settings/appearance "Enable D
 
 </div>
 
-The provided script is a JavaScript code that converts input text into the NATO phonetic alphabet, which is a standardized phonetic representation of letters and numbers used for clear communication. The purpose of the script is to enhance readability and pronunciation of text by replacing each letter with its corresponding NATO phonetic word.
+The provided script is a JavaScript code that converts input text into the NATO phonetic alphabet, which is a standardised phonetic representation of letters and numbers used for clear communication. The purpose of the script is to enhance readability and pronunciation of text by replacing each letter with its corresponding NATO phonetic word.
 
 The script handles both letters and numbers by mapping them to their respective NATO phonetic alphabet words. For letters, it checks if the character is a letter using a regular expression and replaces it with the corresponding NATO phonetic word. Similarly, for numbers, it checks if the character is a number and replaces it with the appropriate NATO phonetic word for numbers. This ensures that both letters and numbers are converted correctly.
 
@@ -90,7 +90,7 @@ By selectively converting letters and numbers while leaving other characters unc
 The provided script not only converts input text into the NATO phonetic alphabet but also offers additional functionality for a seamless user experience.
 In addition to the conversion feature, the script includes a "Copy to Clipboard" function. This allows users to conveniently copy the converted text to their clipboard with a single click. When the "Copy" button is clicked, the script selects the converted text, adds it to the clipboard, and provides an alert to notify the user that the text has been successfully copied. This feature eliminates the need for users to manually select and copy the converted text, enhancing usability and convenience.
 
-Furthermore, the script incorporates a reset functionality for the form without requiring the page to reload. When the "Reset" button is clicked, the script clears the input field and the displayed converted text, allowing users to easily start over with a fresh input. The reset functionality improves user experience by providing a quick and efficient way to clear the form without any page refresh or disruption. This convertor also featured a Dark Mode toggle for those times when you are working late and need to reduce the bright whites on your screen.
+Furthermore, the script incorporates a reset functionality for the form without requiring the page to reload. When the "Reset" button is clicked, the script clears the input field and the displayed converted text, allowing users to easily start over with a fresh input. The reset functionality improves user experience by providing a quick and efficient way to clear the form without any page refresh or disruption. This converter also features a Dark Mode toggle for those times when you are working late and need to reduce the bright whites on your screen.
 
 These additional features enhance the overall usability and user-friendliness of the script, making it easier for users to convert text, copy the result, and reset the form as needed, all without the need for page reloads or complicated interactions. This script uses HTML, CSS and JavaScript which has been coded with mobile device usage and responsivity in mind.
 
@@ -133,7 +133,7 @@ Here are some common questions (FAQ) about the NATO Phonetic Alphabet Converter 
 - **Is the NATO Phonetic Alphabet Converter secure to use?**
   - _Yes, the converter is a client-side tool that runs locally in your web browser. It does not collect or transmit any data over the internet, ensuring your privacy and security. The code provided is designed to handle user input in a way that mitigates common injection vulnerabilities, such as Cross-Site Scripting (XSS) attacks. It ensures that special characters are not executed as code or cause unexpected behaviour. The regular expressions used in the code specifically check for letters and numbers, ensuring that only valid characters are processed and converted. Any other characters, including special characters, are treated as is and included in the output without any modification. However, it's worth noting that the code doesn't perform any explicit sanitisation or validation of the input beyond the checks for letters and numbers. Depending on your specific use case and requirements, you may consider implementing additional input validation or sanitisation measures to further enhance security and prevent potential issues. When processing user input, it's generally recommended to follow security best practices, such as input validation, output encoding, and using parametrised queries or prepared statements when interacting with databases, to prevent injection attacks and ensure the security of your application._
 - **Can I customize or modify the NATO Phonetic Alphabet Converter?**
-  - _Yes, since the code is provided, you can modify and customize it according to your needs, such as adding additional functionality or integrating it into your existing projects._
+  - _Yes, since the code is provided, you can modify and customise it according to your needs, such as adding additional functionality or integrating it into your existing projects._
 - **Do I need to install any additional software or frameworks to use the NATO Phonetic Alphabet Converter?**
   - _No, the converter is self-contained and does not require any additional software or frameworks. Simply download the code file and run it in your web browser. The NATO Phonetic Alphabet Converter code offers a valuable advantage by being a self-contained, framework-free solution that can be readily used by anyone with a standard web browser. Unlike many projects that rely on various dependencies and frameworks, this code can be simply downloaded, copied to a desired location, and accessed by double-clicking the file. By eliminating the need for users to install specific environments or additional frameworks, it ensures accessibility and ease of use for the average user. This simplicity and portability make it an ideal choice for individuals who require a quick and reliable tool without the burden of complex setup or compatibility issues._
 
@@ -146,9 +146,9 @@ Here are some common questions (FAQ) about the NATO Phonetic Alphabet Converter 
 When implementing the code in your own project, especially if it involves processing user input, there are a few considerations for validation and sanitisation that you could take into account:
 
 1. **Input Validation:** Ensure that the input text meets the expected criteria or constraints. You can validate the length of the input, check for specific character patterns, or enforce any other requirements based on your application's needs. This helps prevent unexpected or malicious input from causing issues.
-2. **Cross-Site Scripting (XSS) Prevention:** Apply proper output encoding when displaying user-generated content. This prevents any malicious script or HTML from being executed in the output. HTML encoding functions, such as innerHTML or textContent, can be used to sanitize the output before displaying it to users.
+2. **Cross-Site Scripting (XSS) Prevention:** Apply proper output encoding when displaying user-generated content. This prevents any malicious script or HTML from being executed in the output. HTML encoding functions, such as innerHTML or textContent, can be used to sanitise the output before displaying it to users.
 3. **Content Security Policy (CSP):** Implement a Content Security Policy to restrict the types of content that can be loaded or executed on the page. This can help mitigate risks associated with malicious content or scripts that may be introduced via user input.
-4. **Regular Expression Validation:** Enhance the regular expressions used in the code to further validate and sanitize the input. For example, you can modify the regular expressions to allow only specific characters or patterns, ensuring that unexpected or potentially harmful input is rejected.
+4. **Regular Expression Validation:** Enhance the regular expressions used in the code to further validate and sanitise the input. For example, you can modify the regular expressions to allow only specific characters or patterns, ensuring that unexpected or potentially harmful input is rejected.
 5. **Server-Side Validation:** If the input is sent to a server for further processing or storage, perform server-side validation to ensure the input adheres to the necessary constraints. This includes validating the input length, format, and any other requirements specific to your application.
 
 Remember that security requirements may vary depending on the specific context and sensitivity of the data being processed. It's always a good practice to conduct a thorough security assessment of your application, and consult security professionals or relevant resources for guidance specific to your project and its environment.
@@ -167,7 +167,7 @@ Here are some potential use cases for the NATO Phonetic Alphabet Converter code:
 3. **Integration into Existing Projects:** The code can be integrated into existing web projects or applications where the conversion of text to the NATO Phonetic Alphabet is required. It provides a ready-to-use solution that can be easily incorporated into different systems and interfaces.
 4. **Personal Use and Reference:** Users who frequently need to communicate using the NATO Phonetic Alphabet, whether for work or personal reasons, can utilise this code as a convenient resource. They can access it on their desktop or mobile devices to quickly convert text to phonetic equivalents, ensuring accurate communication.
 5. **Language and Communication Applications:** Developers working on language-related applications, voice assistants, or speech recognition systems can incorporate the NATO Phonetic Alphabet Converter code to enhance their platforms' capabilities. It can be used to convert text input into phonetic representations, supporting accurate pronunciation and transcription.
-6. **Educational Tools and Resources:** Teachers, trainers, or language learning platforms can employ this code as an educational tool to introduce and practice the NATO Phonetic Alphabet. It can be utilized in classrooms, online courses, or language learning apps to familiarize learners with the alphabet's usage and improve their language skills.
+6. **Educational Tools and Resources:** Teachers, trainers, or language learning platforms can employ this code as an educational tool to introduce and practice the NATO Phonetic Alphabet. It can be utilised in classrooms, online courses, or language learning apps to familiarise learners with the alphabet's usage and improve their language skills.
 
 Remember to consider the specific requirements and context of your project or application to determine how the code can be best utilised.
 
@@ -203,31 +203,31 @@ If you decide to use this project, please do **leave the attribution comments in
 <!-- MARKDOWN LINKS & IMAGES -->
 
 <!-- Contributors Total -->
-[contributors-shield]: https://img.shields.io/github/contributors/ProfCyberNaught/nato_phonetic_alphabet_convertor_app.svg?style=for-the-badge
-[contributors-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/ProfCyberNaught/nato_phonetic_alphabet_converter_app.svg?style=for-the-badge
+[contributors-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app/graphs/contributors
 
 <!-- Contributions Total -->
 [contributions]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge
 [contributions-url]: ./CONTRIBUTING.md
 
 <!-- Discussions Total -->
-[discussions]: https://img.shields.io/github/discussions/ProfCyberNaught/nato_phonetic_alphabet_convertor_app.svg?style=for-the-badge
-[discussions-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app/discussions
+[discussions]: https://img.shields.io/github/discussions/ProfCyberNaught/nato_phonetic_alphabet_converter_app.svg?style=for-the-badge
+[discussions-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app/discussions
 
 <!-- Folks Total -->
-[forks-shield]: https://img.shields.io/github/forks/ProfCyberNaught/nato_phonetic_alphabet_convertor_app.svg?style=for-the-badge
-[forks-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app/network/members
+[forks-shield]: https://img.shields.io/github/forks/ProfCyberNaught/nato_phonetic_alphabet_converter_app.svg?style=for-the-badge
+[forks-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app/network/members
 
 <!-- Stars Total -->
-[stars-shield]: https://img.shields.io/github/stars/ProfCyberNaught/nato_phonetic_alphabet_convertor_app.svg?style=for-the-badge
-[stars-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app/stargazers
+[stars-shield]: https://img.shields.io/github/stars/ProfCyberNaught/nato_phonetic_alphabet_converter_app.svg?style=for-the-badge
+[stars-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app/stargazers
 
 <!-- Issues Total -->
-[issues-shield]: https://img.shields.io/github/issues/ProfCyberNaught/nato_phonetic_alphabet_convertor_app.svg?style=for-the-badge
-[issues-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_convertor_app/issues
+[issues-shield]: https://img.shields.io/github/issues/ProfCyberNaught/nato_phonetic_alphabet_converter_app.svg?style=for-the-badge
+[issues-url]: https://github.com/ProfCyberNaught/nato_phonetic_alphabet_converter_app/issues
 
 <!-- LICENSING LINK: If you intend to use an open-source license from: https://choosealicense.com/ use the following: -->
-[license-shield]: https://img.shields.io/github/license/ProfCyberNaught/nato_phonetic_alphabet_convertor_app.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/ProfCyberNaught/nato_phonetic_alphabet_converter_app.svg?style=for-the-badge
 <!-- OTHERWISE: You will need to create your own link reference based on the license code used - example below: -->
 <!-- [license-shield]: https://img.shields.io/badge/License:%20CC%20BY%20NC%20ND%204.0-grey?style=for-the-badge -->
 <!-- HELP NOTICE: Leave the following license link as all license files will be named the same -->
